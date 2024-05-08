@@ -74,7 +74,7 @@ class Ripple extends StatelessWidget {
       children: [
         ...generarListaDeWidgets(
           RippleWidget(
-            child: widget,
+            child: AbsorbPointer(child: widget),
           ),
         ),
         widget
